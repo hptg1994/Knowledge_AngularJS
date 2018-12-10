@@ -1,0 +1,134 @@
+
+
+html {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    background-color: #F6F9FC;
+}
+
+header {
+    margin: 13% 0;
+    background-color: #F6F9FC;
+}
+
+
+/***********************************/
+
+
+/* Reused */
+
+
+/***********************************/
+
+
+
+.Login-btn,
+.Signup-btn {
+    /* position: absolute;
+    left: 50%; */
+    text-align: center;
+    /* width: 50%; */
+    font-size: 130%;
+    text-decoration: none;
+    /* margin-top: 25px; */
+    margin: 25px auto;
+    align-content: center;
+    border-radius: 7px;
+    /* border: 2px solid gray; */
+    padding: 10px;
+}
+
+.Login-btn,
+.Signup-btn input {
+    font-size: 105%;
+    font-weight: 400;
+    color: rgba(15, 127, 232, 0.849);
+    text-decoration: none;
+    /* text-align: center;*/
+}
+
+
+/***********************************/
+
+
+/* Title */
+
+
+/***********************************/
+
+h1 {
+    font-weight: 400;
+    font-size: 400%;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgba(15, 127, 232, 0.849);
+}
+
+
+/***********************************/
+
+
+/* Login Form */
+
+
+/***********************************/
+
+.selection {
+    text-align: center;
+    margin: 30px auto;
+    /* margin-left: 20px */
+}
+
+.selection a {
+    color: gray;
+    margin: 0 10px;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+.Login-form {
+    /* font-size: 120%; */
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+.usernameInput label,
+.passwordInput label{
+    font-size: 140%;
+    padding-top: 10px;
+    margin-left: 40px;
+
+}
+
+.usernameform input{
+    /* padding: 10px; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px dotted gray;
+}
+.passwordform input{
+    padding: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px dotted gray;
+}
+.Conform label{
+    margin-top: -10px;
+}
+
+.Login-btn input,
+.Signup-btn input{
+    width: 50%;
+    color:white;
+    padding: 10px;
+    font-size: 120%;
+    border-radius: 4px;
+    background-color: rgba(15, 127, 232, 0.849);
+    border: 1px dotted gray;
+}
+

@@ -1,0 +1,36 @@
+<header>
+    <h1>Knowledge</h1>
+    <section class="Input">
+        <link rel="stylesheet" href="../../style/Login.css">
+        <div class="row selection">
+            <a href="/login">Log In</a>
+            <a href="/signup">Sign Up </a>
+        </div>
+        <form action="/login" method="post" class="Login-form">
+            <div class="row usernameInput">
+                <div class="span2">
+                    <label for="Username">Username</label>
+                </div>
+                <div class="span4 usernameform">
+                    <input type="text" name="username" id="Username" placeholder="Your Username" required>
+                </div>
+            </div>
+            <div class="row passwordInput">
+                <div class="span2">
+                    <label for="password">Password</label>
+                </div>
+                <div class="span4 passwordform" >
+                    <input type="text" name="password" id="password" placeholder="Your Password" required>
+                </div>
+            </div>
+            <div class="Login-btn">
+                <input type="submit" value="Log in">
+            </div>
+        </form>
+        {{!-- {{#if error}}
+        <div style="color:#ee0000;">
+            <span>{{message}}</span>
+        </div>
+        {{/if}} --}}
+    </section>
+</header>
