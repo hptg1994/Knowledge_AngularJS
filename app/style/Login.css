@@ -2,10 +2,16 @@
     width: 100%;
     height: 100%;
     background-color: #B8E5FB;
+    display: flex;
+
 }
 
 .loginContainer {
-
+    margin: auto auto;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: white;
 }
 
 .Login-btn,
@@ -55,11 +61,22 @@ h1 {
 /***********************************/
 
 .input-group {
+    width: 100%;
+}
 
+.input-group p {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
 }
 
 .login-input {
-
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .selection {
@@ -73,11 +90,6 @@ h1 {
     margin: 0 10px;
     font-size: 200%;
     text-decoration: none;
-}
-
-.loginForm {
-    width: 30%;
-    margin: 0 auto;
 }
 
 
