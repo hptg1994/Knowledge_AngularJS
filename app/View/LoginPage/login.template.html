@@ -1,30 +1,29 @@
 <link rel="stylesheet" href="../../style/Login.css">
 <div class="loginPage">
-    <div class="loginContainer">
+    <div class="loginContainer" ng-controller="LoginController">
         <h1>Knowledge</h1>
-        <section class="Input">
-            <div class="row selection">
-                <a href="/login">Log In</a>
-                <a href="/signup">Sign Up </a>
+        <div class="selection">
+            <a href="/login">Log In</a>
+            <a href="/signup">Sign Up </a>
+        </div>
+
+        <form class="loginForm" ng-submit="login()">
+            <div class="input-group">
+                <p>Username</p>
+                <input type="text" name="username" required ng-model="username"
+                       class="login-input">
             </div>
-            <form class="loginForm" ng-submit="login()">
-                <div class="input-group">
-                    <p>Username</p>
-                    <input type="text" name="username" required ng-model="username"
-                           class="login-input">
-                </div>
-                <div class="input-group">
-                    <p>Password</p>
-                    <input type="text" name="password" required ng-model="username"
-                           class="login-input">
-                </div>
-                <div class="Login-btn">
-                    <input type="submit" value="Log in">
-                </div>
-            </form>
-            <div ng-show="false" style="color:#ee0000;">
-                <span>{{message}}</span>
+            <div class="input-group">
+                <p>Password</p>
+                <input type="password" name="password" required ng-model="password"
+                       class="login-input">
             </div>
-        </section>
+            <div class="Login-btn">
+                <input type="submit" value="Log in">
+            </div>
+        </form>
+        <div ng-show="false" style="color:#ee0000;">
+            <span>{{message}}</span>
+        </div>
     </div>
 </div>

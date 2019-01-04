@@ -2,7 +2,9 @@
 'use strict';
 
 angular.module('Knowledge').config(['$routeProvider', function ($routeProvider) {
-  $routeProvider.when('/', {
+  $routeProvider.when('/login', {
     template: '<login></login>'
-  }).when('/signup', {}).otherwise("/");
+  }).when('/signup', {}).when('/main', {
+    template: '<home></home>'
+  }).otherwise("/main");
 }]);
