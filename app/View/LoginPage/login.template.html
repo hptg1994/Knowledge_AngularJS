@@ -1,34 +1,30 @@
-<header>
-    <h1>Knowledge</h1>
-    <section class="Input">
-        <link rel="stylesheet" href="../../style/Login.css">
-        <div class="row selection">
-            <a href="/login">Log In</a>
-            <a href="/signup">Sign Up </a>
-        </div>
-        <form action="/login" method="post" class="Login-form">
-            <div class="row usernameInput">
-                <div class="span2">
-                    <label for="Username">Username</label>
-                </div>
-                <div class="span4 usernameform">
-                    <input type="text" name="username" id="Username" placeholder="Your Username" required>
-                </div>
+<link rel="stylesheet" href="../../style/Login.css">
+<div class="loginPage">
+    <div class="loginContainer">
+        <h1>Knowledge</h1>
+        <section class="Input">
+            <div class="row selection">
+                <a href="/login">Log In</a>
+                <a href="/signup">Sign Up </a>
             </div>
-            <div class="row passwordInput">
-                <div class="span2">
-                    <label for="password">Password</label>
+            <form class="loginForm" ng-submit="login()">
+                <div class="input-group">
+                    <p>Username</p>
+                    <input type="text" name="username" required ng-model="username"
+                           class="login-input">
                 </div>
-                <div class="span4 passwordform" >
-                    <input type="text" name="password" id="password" placeholder="Your Password" required>
+                <div class="input-group">
+                    <p>Password</p>
+                    <input type="text" name="password" required ng-model="username"
+                           class="login-input">
                 </div>
+                <div class="Login-btn">
+                    <input type="submit" value="Log in">
+                </div>
+            </form>
+            <div ng-show="false" style="color:#ee0000;">
+                <span>{{message}}</span>
             </div>
-            <div class="Login-btn">
-                <input type="submit" value="Log in">
-            </div>
-        </form>
-        <div ng-show="false" style="color:#ee0000;">
-            <span>{{message}}</span>
-        </div>
-    </section>
-</header>
+        </section>
+    </div>
+</div>

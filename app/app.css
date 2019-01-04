@@ -1,25 +1,19 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+html {
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: #F6F9FC;
 }
 
-.menu:before {
-  content: "[";
+body {
+    width: 100%;
+    margin: 0px;
 }
 
-.menu:after {
-  content: "]";
+p {
+    margin: 0px;
 }
 
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+* {
+    margin: 0px;
+    padding: 0px;
 }
