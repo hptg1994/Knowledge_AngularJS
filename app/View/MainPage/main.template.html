@@ -1,17 +1,19 @@
 <link rel="stylesheet" href="../../style/Main.css">
-<section class="MainPage">
+<section class="MainPage" ng-controller="HomeController">
     <header class="MainPage-Header">
         <div class="MainPage-Header-Left">
             <h2>Title</h2>
             <h3>Discover</h3>
+            <h3>Home</h3>
             <h3>Topic</h3>
-            <div>
+            <div class="MainPage-Searching-Input">
                 <input type="text" ng-model="searchingTopic" name="searchingTopic">
                 <button>Search</button>
             </div>
 
             <button class="MainPage-AddQuestion-Button">Ask</button>
         </div>
+
         <div class="MainPage-Header-Right">
             <div class="MainPage-Header-Alert">
                 <button class="">Alert</button>
@@ -24,4 +26,15 @@
             </div>
         </div>
     </header>
+
+    <section class="MainPage-MainSection">
+        <section class="MainPage-QuestionSection">
+            <div class="MainPage-QuestionCard-Container">
+                <question-card></question-card>
+            </div>
+            <div class="MainPage-QuestionCard-Container">
+                <question-card></question-card>
+            </div>
+        </section>
+    </section>
 </section>
